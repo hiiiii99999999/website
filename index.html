@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYNX STREETWEAR</title>
     <style>
-        /* Base Reset & Design Variables */
+        /* Nike-Inspired Modern Styling Variables */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
         html {
@@ -18,225 +18,216 @@
         }
 
         body {
-            background: linear-gradient(135deg, #0a0a0a, #121214, #1a1a1e);
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #111111;
             min-height: 100vh;
             line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* Modern Navigation Bar */
+        /* Minimalist High-Contrast Navbar */
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.25rem 2rem;
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            background-color: rgba(0, 0, 0, 0.4);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 1.5rem 3rem;
+            background-color: #ffffff;
+            border-bottom: 1px solid #f5f5f5;
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
         nav h1 {
-            font-size: 1.5rem;
-            font-weight: 800;
-            letter-spacing: 0.25em;
+            font-size: 1.75rem;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            color: #111111;
         }
 
         .nav-links {
             display: flex;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .nav-links a {
-            color: #9ca3af;
+            color: #111111;
             text-decoration: none;
-            font-size: 0.85rem;
+            font-size: 1rem;
             font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transition: color 0.2s;
+            transition: color 0.15s ease;
         }
 
         .nav-links a:hover {
-            color: #ffffff;
+            color: #707072;
         }
 
-        /* Hero Showcase Layout */
+        /* Bold Full-Bleed Hero Layout */
         .hero {
-            height: 75vh;
+            height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 2rem;
+            align-items: flex-start;
+            text-align: left;
+            padding: 0 3rem;
+            background-color: #f6f6f6;
+            margin-bottom: 4rem;
         }
 
         .hero h2 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 0.75rem;
-            letter-spacing: 0.08em;
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 1.0;
+            letter-spacing: -0.03em;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
         }
 
         .hero p {
-            color: #9ca3af;
+            color: #707072;
             margin-bottom: 2rem;
-            font-size: 1.15rem;
-            letter-spacing: 0.02em;
+            font-size: 1.25rem;
+            max-width: 30rem;
         }
 
-        /* Call To Action Buttons */
+        /* Premium Interface Action Buttons */
         .btn {
             display: inline-block;
             cursor: pointer;
             border: none;
-            font-weight: 600;
+            font-weight: 500;
             text-align: center;
             text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            font-size: 0.85rem;
-            transition: all 0.2s ease;
+            font-size: 1rem;
+            transition: background-color 0.15s ease, opacity 0.15s ease;
         }
 
         .btn-primary {
-            background-color: #ffffff;
-            color: #000000;
-            padding: 1rem 2rem;
-            border-radius: 0.25rem;
+            background-color: #111111;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 1.5rem;
         }
 
         .btn-primary:hover {
-            background-color: #e5e7eb;
-            transform: translateY(-1px);
+            background-color: #707072;
         }
 
         .btn-checkout {
             width: 100%;
-            margin-top: 1rem;
-            padding: 0.85rem 1rem;
-            border-radius: 0.25rem;
-            background-color: #ffffff;
-            color: #000000;
+            margin-top: 1.25rem;
+            padding: 1rem 1.5rem;
+            border-radius: 2rem;
+            background-color: #111111;
+            color: #ffffff;
         }
 
         .btn-checkout:hover {
-            background-color: #d1d5db;
+            opacity: 0.8;
         }
 
-        /* Store Catalog Grid Layout */
+        /* Clean Retail Catalog Grid Layout */
         .catalog-container {
-            max-width: 75rem;
+            max-width: 80rem;
             margin: 0 auto;
-            padding: 4rem 2rem;
+            padding: 2rem 3rem;
         }
 
         .category-title {
-            font-size: 1.75rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #111111;
         }
 
         .product-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 2.5rem;
-            margin-bottom: 5rem;
+            gap: 2rem;
+            margin-bottom: 6rem;
         }
 
-        /* Premium Product Card Structure */
+        /* Clean Aesthetic Product Card Component */
         .product-card {
-            background-color: #16161a;
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            border-radius: 0.35rem;
-            padding: 1.25rem;
+            background-color: #ffffff;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .product-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(255, 255, 255, 0.12);
         }
 
         .image-container {
             width: 100%;
-            background-color: #1c1c21;
-            border-radius: 0.25rem;
+            background-color: #f6f6f6;
             overflow: hidden;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1rem;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .product-card img {
             width: 100%;
-            height: auto;
+            height: 100%;
             object-fit: cover;
             display: block;
         }
 
         .product-info {
             display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 0.5rem;
+            flex-direction: column;
+            gap: 0.25rem;
+            padding: 0.25rem 0;
         }
 
         .product-card h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            letter-spacing: 0.02em;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #111111;
         }
 
         .product-card .price {
-            color: #9ca3af;
-            font-size: 1.05rem;
-            font-weight: 500;
+            color: #707072;
+            font-size: 1.1rem;
         }
 
-        /* About Section Layout */
+        /* Corporate Identity Section */
         .about-section {
-            background-color: #0e0e10;
-            padding: 6rem 2rem;
+            background-color: #f6f6f6;
+            padding: 8rem 3rem;
             text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.04);
         }
 
         .about-section h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 800;
             margin-bottom: 1.5rem;
-            letter-spacing: 0.05em;
+            letter-spacing: -0.02em;
         }
 
         .about-section p {
-            color: #9ca3af;
-            max-width: 40rem;
+            color: #707072;
+            max-width: 35rem;
             margin: 0 auto;
-            line-height: 1.75;
-            font-size: 1.05rem;
+            line-height: 1.6;
+            font-size: 1.1rem;
         }
 
-        /* Universal Footer */
+        /* Standard Minimalist E-Commerce Footer */
         footer {
-            padding: 2.5rem 2rem;
-            text-align: center;
-            color: #4b5563;
-            border-top: 1px solid rgba(255, 255, 255, 0.04);
-            font-size: 0.85rem;
-            letter-spacing: 0.05em;
+            padding: 3rem;
+            background-color: #111111;
+            color: #707072;
+            font-size: 0.875rem;
         }
 
-        /* Responsive Breakpoints */
+        footer p {
+            max-width: 74rem;
+            margin: 0 auto;
+        }
+
+        /* Device Specific Responsive Framework */
         @media (min-width: 640px) {
             .product-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -245,10 +236,10 @@
 
         @media (min-width: 1024px) {
             .hero h2 {
-                font-size: 4.5rem;
+                font-size: 6rem;
             }
             .product-grid {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
@@ -259,7 +250,7 @@
     <nav>
         <h1>KYNX</h1>
         <div class="nav-links">
-            <a href="#tshirts">T-Shirts</a>
+            <a href="#pants">Pants</a>
             <a href="#hoodies">Hoodies</a>
             <a href="#about">About</a>
         </div>
@@ -267,31 +258,31 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>KYNX STREETWEAR</h2>
-        <p>Minimal. Bold. Everyday essentials.</p>
-        <a href="#tshirts" class="btn btn-primary">Shop Collection</a>
+        <h2>Move Freely.</h2>
+        <p>Minimalist streetwear engineered for comfort and modern aesthetics.</p>
+        <a href="#pants" class="btn btn-primary">Shop Collection</a>
     </section>
 
     <!-- Main Catalog Container -->
     <main class="catalog-container">
         
-        <!-- Category: T-Shirts -->
-        <section id="tshirts">
-            <h2 class="category-title">T-Shirts</h2>
+        <!-- Category: Pants -->
+        <section id="pants">
+            <h2 class="category-title">Pants</h2>
             <div class="product-grid">
                 
-                <!-- Product Card 1 -->
+                <!-- Product Card: Pants -->
                 <div class="product-card">
                     <div>
                         <div class="image-container">
-                            <img src="https://files.tapstitch.com/hugepod/material/custom_printing/f7bc3692c5734bfd9f7cfcd5faa73706.png" alt="KYNX Classic Tee">
+                            <img src="https://files.tapstitch.com/hugepod/material/custom_printing/c86e1c781b414bc99e84350468bd79ac.png" alt="KYNX Barrel Sweatpants">
                         </div>
                         <div class="product-info">
-                            <h3>KYNX Classic Tee</h3>
-                            <span class="price">$39.99</span>
+                            <h3>KYNX Barrel Sweatpants</h3>
+                            <span class="price">$59.99</span>
                         </div>
                     </div>
-                    <!-- Replace href with your checkout link -->
+                    <!-- Replace href with your actual payment processing URL -->
                     <a href="your-checkout-link.com" class="btn btn-checkout">Checkout</a>
                 </div>
 
@@ -303,18 +294,18 @@
             <h2 class="category-title">Hoodies</h2>
             <div class="product-grid">
                 
-                <!-- Product Card 2 -->
+                <!-- Product Card: Hoodie -->
                 <div class="product-card">
                     <div>
                         <div class="image-container">
-                            <img src="https://files.tapstitch.com/hugepod/material/custom_printing/65b68f7fa2964b4cb82514b49653e738.png" alt="KYNX Heavy Hoodie">
+                            <img src="tapstitch.com" alt="KYNX Heavy Hoodie">
                         </div>
                         <div class="product-info">
                             <h3>KYNX Heavy Hoodie</h3>
                             <span class="price">$69.99</span>
                         </div>
                     </div>
-                    <!-- Replace href with your checkout link -->
+                    <!-- Replace href with your actual payment processing URL -->
                     <a href="your-checkout-link.com" class="btn btn-checkout">Checkout</a>
                 </div>
 
