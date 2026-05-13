@@ -33,7 +33,7 @@
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             background-color: rgba(0, 0, 0, 0.4);
-            border-b: 1px solid rgba(255, 255, 255, 0.08);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -177,16 +177,6 @@
             margin-bottom: 1.25rem;
         }
 
-        /* Flexbox for handling multi-image layouts */
-        .image-container.split {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .image-container.split img {
-            width: calc(50% - 0.25rem);
-        }
-
         .product-card img {
             width: 100%;
             height: auto;
@@ -294,14 +284,14 @@
                 <div class="product-card">
                     <div>
                         <div class="image-container">
-                            <img src="tapstitch.com" alt="KYNX Classic Tee">
+                            <img src="https://files.tapstitch.com/hugepod/material/custom_printing/f7bc3692c5734bfd9f7cfcd5faa73706.png" alt="KYNX Classic Tee">
                         </div>
                         <div class="product-info">
                             <h3>KYNX Classic Tee</h3>
                             <span class="price">$39.99</span>
                         </div>
                     </div>
-                    <!-- Replace href with your actual link -->
+                    <!-- Replace href with your checkout link -->
                     <a href="your-checkout-link.com" class="btn btn-checkout">Checkout</a>
                 </div>
 
@@ -316,16 +306,15 @@
                 <!-- Product Card 2 -->
                 <div class="product-card">
                     <div>
-                        <div class="image-container split">
-                            <img src="/mnt/data/image.png" alt="KYNX Hoodie Front">
-                            <img src="/mnt/data/image.png" alt="KYNX Hoodie Back">
+                        <div class="image-container">
+                            <img src="https://files.tapstitch.com/hugepod/material/custom_printing/65b68f7fa2964b4cb82514b49653e738.png" alt="KYNX Heavy Hoodie">
                         </div>
                         <div class="product-info">
                             <h3>KYNX Heavy Hoodie</h3>
                             <span class="price">$69.99</span>
                         </div>
                     </div>
-                    <!-- Replace href with your actual link -->
+                    <!-- Replace href with your checkout link -->
                     <a href="your-checkout-link.com" class="btn btn-checkout">Checkout</a>
                 </div>
 
